@@ -53,6 +53,15 @@
     <!-- v=1.0 version du css, pour régler les problèmes de mise en cache du navigateur -->
     <link rel="stylesheet" href="css/main.css?v=1.0">
 
+    <!-- Ajout d'un favicon au site web -->
+    <script>
+      //Si le navigateur est Firefox le favicon sera animée grace à un gif créé le votre ici http://www.favicon.cc
+      if (navigator.userAgent.indexOf("Firefox")!=-1)
+        document.write('<link href="http://freshloic.fr/img/favicon.gif" rel="icon" type="image/gif">');
+      else
+        document.write('<link href="http://freshloic.fr/img/favicon.ico" rel="shortcut icon">');
+    </script>
+
     <!-- Permet à IE de lire les éléments HTML5 -->
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
