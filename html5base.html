@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- Doctype importante pour déclarer l'utilisation du HTML5 -->
-<html lang="fr">
+<html lang="fr-GP">
   <head>
     <!-- Encodage  + les balises metas sont tres important pour le référencement -->
     <meta charset="utf-8">
@@ -174,7 +174,9 @@
             <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
             <input type="radio" name="gender" value="male" checked> Male<br>
             <input type="radio" name="gender" value="female"> Female<br>
-            <input type="radio" name="gender" value="other"> Other
+            <input type="radio" name="gender" value="other"> Other<br>
+            <label>Quantity (between 1 and 5):</label><br>
+            <input type="number" name="quantity" min="1" max="5"><br>
             <label>Password:</label><br>
             <input type="password" name="password" value=""><br><br>
             <input type="submit" value="Submit">
@@ -182,6 +184,11 @@
           </fieldset>
         </form>
 
+        <!-- formulaire de recherche  -->
+        <form>
+          <label>Search Google: </label>
+          <input type="search" name="googlesearch">
+        </form>
         <section>
           <h3>L’iPhone SE d’Apple</h3>
           <article class="art-1">
