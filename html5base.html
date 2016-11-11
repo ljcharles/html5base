@@ -132,7 +132,8 @@
             var mapOptions = {
               // Personnaliser vos coordonnées ici latitudepuis longitude
               center: new google.maps.LatLng(16.1547308, -61.9560547),
-              zoom: 10
+              zoom: 10,
+              disableDefaultUI: true
             }
             var map = new google.maps.Map(mapCanvas, mapOptions);
           }
@@ -158,6 +159,28 @@
             <td>94</td>
           </tr>
         </table>
+
+        <!-- formulaire  -->
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Personal information:</legend>
+            <label>First name:</label><br>
+            <!-- Seulement des lettres minimum 4 max 10 -->
+            <input type="text" name="firstname" value="Mickey" pattern="[A-Za-z]{4,10}"><br>
+            <label>Last name:</label><br>
+            <input type="text" name="lastname" value="Mouse"><br>
+            <label>Email:</label><br>
+            <input type="email" name="email" value="Mickey" placeholder="Ecris@moi.fr"><br>
+            <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+            <input type="radio" name="gender" value="male" checked> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other
+            <label>Password:</label><br>
+            <input type="password" name="password" value=""><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+          </fieldset>
+        </form>
 
         <section>
           <h3>L’iPhone SE d’Apple</h3>
