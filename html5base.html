@@ -73,6 +73,7 @@
     <!--[if IE]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
   </head>
   <body>
     <!-- Entête -->
@@ -103,25 +104,60 @@
           <h2>Les nouvelles technologies</h2>
         </header>
 
-        <div>
-          <figure>
-            <img src="http://lorempicsum.com/up/627/300/4" alt="intro">
-            <figcaption>Fig1. - The Pulpit Rock, Norway.</figcaption>
-          </figure>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-        </div>
+        <figure>
+          <img src="http://lorempicsum.com/up/627/300/4" alt="intro">
+          <figcaption>Fig1. - The Pulpit Rock, Norway.</figcaption>
+        </figure>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
 
         <!-- Vidéo -->
         <iframe style="border: none;" width="560" height="315" src="https://www.youtube.com/embed/GXjbbpBn8xY" allowfullscreen></iframe>
 
         <!-- Audio -->
         <audio controls>
+          <!-- Music libre d'utilisation : http://www.bensound.com/ -->
           <source src="http://www.bensound.com/royalty-free-music?download=happiness" type="audio/mpeg">
           Your browser does not support the audio tag.
         </audio>
+
+        <!-- Google map -->
+        <div id="map" style="width:100%;height:500px"></div>
+
+        <script>
+          function myMap() {
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+              // Personnaliser vos coordonnées ici latitudepuis longitude
+              center: new google.maps.LatLng(16.1547308, -61.9560547),
+              zoom: 10
+            }
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+          }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+        <!--  Tableau -->
+        <table style="width:100%">
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+          </tr>
+        </table>
 
         <section>
           <h3>L’iPhone SE d’Apple</h3>
@@ -139,6 +175,9 @@
               <p>Posté le
                 <time datetime="2016-09-03">3 Septembre 2016</time>
               </p>
+              <p>Dernière modification le
+                <time datetime="2016-09-03">3 Septembre 2016</time>
+              </p>
             </footer>
           </article>
 
@@ -154,6 +193,9 @@
             </p>
             <footer>
               <p>Posté le
+                <time datetime="2016-02-02">2 février 2016</time>
+              </p>
+              <p>Dernière modification le
                 <time datetime="2016-02-02">2 février 2016</time>
               </p>
             </footer>
