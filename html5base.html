@@ -79,7 +79,7 @@
     <!-- Entête -->
     <header>
       <!-- Logo -->
-      <a href="#" rel="home">
+      <a href="#" title="Accueil" rel="home">
         <img src="http://lorempicsum.com/simpsons/55/50/5" alt="Logo Image" class="logo">
       </a>
 
@@ -88,11 +88,11 @@
       <!-- Navigation -->
       <nav>
         <ul>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#login">Se connecter</a></li>
-            <li><a href="#signin">S'inscrire</a></li>
+            <li><a href="#about" title="A propos">À propos</a></li>
+            <li><a href="#services" title="Nos services">Services</a></li>
+            <li><a href="#contact" title="Nous joindre">Contact</a></li>
+            <li><a href="#login" title="Ouvrir votre compte">Se connecter</a></li>
+            <li><a href="#signin" title="Créer un compte">S'inscrire</a></li>
         </ul>
       </nav>
     </header>
@@ -143,6 +143,8 @@
 
         <!--  Tableau -->
         <table style="width:100%">
+          <!--  Legende général  -->
+          <caption>Users info</caption>
           <tr>
             <th>Firstname</th>
             <th>Lastname</th>
@@ -229,6 +231,22 @@
                 <time datetime="2016-02-02">2 février 2016</time>
               </p>
             </footer>
+
+            <p>Le <abbr title="Partir Sans Gagner">PSG</abbr> a encore ... perdu !
+            Utilisez le <dfn>HTML5</dfn>, langage de structuration de page web, pour optimiser votre site</p>
+            <dl>
+              <dt>HTML5</dt>
+                <dd>Langage de structuration</dd>
+              <dt>CSS</dt>
+                <dd>Langage de mise en page, design</dd>
+            </dl>
+            <strong>Texte en Gras</strong>
+            <em>Texte en italique, ou emphasis</em>
+            <mark>Texte passé au marqueur</mark>
+            <dfn>Terme à définir</dfn>
+            <code> &lt;?= "some php lol" ?&gt;</code>
+            <kbd>ctrl</kbd>
+            <var>var i=0</var>
           </article>
         </section>
       </article>
@@ -237,33 +255,33 @@
     <!-- Pied de page -->
     <footer>
       <!-- Logo -->
-      <a href="#" rel="home">
+      <a href="#" title="Accueil" rel="home">
         <img src="http://lorempicsum.com/simpsons/55/50/5" alt="Logo Image" class="logo">
       </a>
       <!-- Navigation -->
       <nav>
         <ul>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#login">Se connecter</a></li>
-            <li><a href="#signin">S'inscrire</a></li>
+            <li><a href="#about" title="A propos">À propos</a></li>
+            <li><a href="#services" title="Nos services">Services</a></li>
+            <li><a href="#contact" title="Nous joindre">Contact</a></li>
+            <li><a href="#login" title="Ouvrir votre compte">Se connecter</a></li>
+            <li><a href="#signin" title="Créer un compte">S'inscrire</a></li>
         </ul>
       </nav>
       <hr>
       <p>Auteur et graphiste: JEAN-CHARLES Loïc</p>
-      <p>Contact information: <a href="mailto:contact@freshloic.fr">contact@freshloic.fr</a>.</p>
-      <a href="#mentions">Mentions légales</a>
+      <p>Contact information: <a href="mailto:contact@freshloic.fr" title="Nous envoyer un email">contact@freshloic.fr</a>.</p>
+      <a href="#mentions" title="Nos conditions">Mentions légales</a>
       <ul>
-          <li><a href="#twitter">Twitter</a></li>
-          <li><a href="#facebook">Facebook</a></li>
-          <li><a href="#google">Google+</a></li>
+          <li><a href="#twitter" title="Suivez nous sur twitter">Twitter</a></li>
+          <li><a href="#facebook" title="Ajouter nous sur facebook">Facebook</a></li>
+          <li><a href="#google" title="Suivez nous sur google">Google+</a></li>
       </ul>
       <address>
         Guadeloupe,France
       </address>
       <!-- Small est la balise indiqué pour mettre le copyright -->
-      <small>© Copyright 2016, <a rel="author" href="http://freshloic.fr">Freshloic</a></small>
+      <small>© Copyright 2016, <a rel="author" title="Portfolio JEAN-CHARLES Loïc" href="http://freshloic.fr">Freshloic</a></small>
     </footer>
   </body>
 </html>
